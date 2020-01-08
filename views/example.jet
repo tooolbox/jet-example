@@ -1,11 +1,2 @@
-<!DOCTYPE html>
-<html>
-  <head></head>
-  <body>
-  	{{mySlice := data}}
-  	{{sorted := SortApples(mySlice)}}
-    {{range i, blah := sorted}}
-    	{{i}}: {{blah.GetFlavor()}}
-    {{end}}
-  </body>
-</html>
+{{apple := GetAppleByName("honeycrisp")}}
+{{TellFlavor(apple)}}
